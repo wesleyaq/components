@@ -51,14 +51,18 @@ $font-family-vr: 'Varela Round';
 /**
  * Sizes
  */
-$font-size-default: 22px !default;
-$font-size-primary: ($font-size-default - 2); // 20
-$font-size-second: ($font-size-primary - 2); // 18
-$font-size-third: ($font-size-second - 2); // 16
-$font-size-fourth: ($font-size-third - 1); // 15
-$font-size-fifth: ($font-size-fourth - 2); // 13
-$font-size-sixth: ($font-size-fifth - 1); // 12
-$font-size-seventh: ($font-size-sixth - 1); // 11
+$font-size-h1: 30px;
+$font-size-h2: 28px;
+$font-size-h3: 26px;
+$font-size-h4: 24px;
+$font-size-h5: 20px;
+$font-size-h6: 18px;
+
+$font-size-xs: 11px;
+$font-size-sm: 13px;
+$font-size-md: 15px;
+$font-size-lg: 18px;
+$font-size-xlg: 22px;
 
 $padding-vertical: 5px !default;
 $padding-horizontal: 10px !default;
@@ -123,7 +127,7 @@ $btn-disabled-bg-color: #C3C3C3;
 $link-hover-decoration: underline;*/
 
 //- Colors
-$btn-default-font-size: $font-size-fifth; // 13
+/*$btn-default-font-size: $font-size-fifth; // 13
 $btn-default-font-line-height: ($btn-default-font-size + 2);
 $btn-default-bd-radius: 3px;
 
@@ -137,19 +141,19 @@ $btn-md-bd-radius: 3px;
 
 $btn-lg-font-size: $font-size-primary; // 20
 $btn-lg-font-line-height: ($btn-lg-font-size + 2);
-$btn-lg-bd-radius: 3px;
+$btn-lg-bd-radius: 3px;*/
 
 /**
  * Inputs Text
  */
 $input-text-font-family: $font-family-muli;
-$input-text-font-size: $font-size-third;
+// $input-text-font-size: $font-size-third;
 $input-text-color: #6A6768;
 $input-text-bg: #FBF5F6;
 $input-text-border: #CECECE;
 $input-text-border-error: #D88676;
 
-$text-font-size-error: $font-size-sixth;
+// $text-font-size-error: $font-size-sixth;
 $text-color-error: #FF0000;
 
 /**
