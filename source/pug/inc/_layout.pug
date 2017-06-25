@@ -1,0 +1,38 @@
+include _mixins
+include _variables
+
+doctype html
+html(lang='es')
+
+	block variables
+
+	head
+		title=titulo
+
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge,chrome=1')
+		meta(name='viewport' content='width=device-width, initial-scale=1, user-scalable=no')
+		meta(name='description' content='')
+		meta(name='keywords' content='')
+		meta(name='format-detection' content='telephone=no')
+
+		link(rel='shortcut icon' href='contentassets/img/favicon.ico')
+		link(rel='stylesheet' href='css/index.css')
+
+		<!--[if lt IE 9]>
+		script(src='js/libs/ie/lt-ie-9.min.js')
+		<![endif]-->
+
+	body
+		header
+			include ../partials/_header
+
+		#content
+			block wBody
+
+		footer#footer
+			include ../partials/_footer
+
+		block wScriptsLibs
+
+		block wScripts

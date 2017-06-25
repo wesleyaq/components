@@ -1,0 +1,164 @@
+/**
+* Breakpoints
+*/
+$breakpoint-xs: 480px !default; // Mobile
+$breakpoint-sm: 768px !default; // Tablet
+$breakpoint-md: 992px !default; // Desktop Title
+$breakpoint-lg: 1200px !default; // Desktop Large
+$breakpoint-lgm: ($breakpoint-lg + 100);
+
+$breakpoint-xs-max:  ($breakpoint-xs - 1) !default;
+$breakpoint-sm-max:  ($breakpoint-sm - 1) !default;
+$breakpoint-md-max:  ($breakpoint-md - 1) !default;
+$breakpoint-lg-max:  ($breakpoint-lg - 1) !default;
+
+/**
+ * Colors
+ */
+$color-black: #000;
+$color-white: #FFF;
+$color-green: #4CAF50;
+$color-blue: #2196F3;
+$color-red: #F44336;
+$color-grey: #9E9E9E;
+$color-orange: #FF9800;
+
+/*$bg-color-default: $color-black;
+$bg-color-primary: $color-white;
+$bg-color-second: $color-red;
+$bg-color-third: $color-blue;
+$bg-color-four: $color-grey;
+
+$font-color-default: $color-black;
+$font-color-primary: $color-white;
+$font-color-second: $color-red;*/
+
+// $font-color-footer: #333;
+
+/**
+ * Font
+ */
+$font-family-pt-sans: 'PT Sans', sans-serif, Arial;
+$font-family-pt-sans-bold: 'PT Sans Bold', sans-serif, Arial;
+$font-family-pt-sans-italic: 'PT Sans Italic', sans-serif, Arial;
+$font-family-pt-sans-bold-italic: 'PT Sans Bold Italic', sans-serif, Arial;
+$font-family-pt-sans-narrow: 'PT Sans Narrow', sans-serif, Arial;
+$font-family-icons: icomoon;
+
+$font-family-muli: Muli;
+$font-family-vr: 'Varela Round';
+
+/**
+ * Sizes
+ */
+$font-size-default: 22px !default;
+$font-size-primary: ($font-size-default - 2); // 20
+$font-size-second: ($font-size-primary - 2); // 18
+$font-size-third: ($font-size-second - 2); // 16
+$font-size-fourth: ($font-size-third - 1); // 15
+$font-size-fifth: ($font-size-fourth - 2); // 13
+$font-size-sixth: ($font-size-fifth - 1); // 12
+$font-size-seventh: ($font-size-sixth - 1); // 11
+
+$padding-vertical: 5px !default;
+$padding-horizontal: 10px !default;
+
+$padding-lg-vertical:    10px !default;
+$padding-lg-horizontal:  16px !default;
+
+$padding-md-vertical:    8px !default;
+$padding-md-horizontal:  13px !default;
+
+$padding-sm-vertical:       1px !default;
+$padding-sm-horizontal:     5px !default;
+
+/**
+ * Grids
+ */
+$grid-columns:              12 !default;
+$grid-gutter-width:         20px !default;
+$grid-float-breakpoint:     $breakpoint-sm-max !default;
+$grid-float-breakpoint-max: ($grid-float-breakpoint - 1) !default;
+
+$container-tablet:             (720px + $grid-gutter-width) !default;
+$container-sm:                 $container-tablet !default;
+$container-desktop:            (940px + $grid-gutter-width) !default;
+$container-md:                 $container-desktop !default;
+$container-large-desktop:      (1300px + $grid-gutter-width) !default;
+$container-lg:                 $container-large-desktop !default;
+
+/**
+ * Bootstrap Select
+ */
+$color-red-error: rgb(185, 74, 72);
+$color-grey-arrow: rgba(204, 204, 204, 0.2);
+
+$width-default: 220px; // 3 960px-grid columns
+
+$zindex-select-dropdown: 1060; // must be higher than a modal background (1050)
+
+
+/**
+ * Buttons
+ */
+/*$btn-default-bg-color: $bg-color-second;
+$btn-default-bg-color-hover: lighten($btn-default-bg-color, 20%);
+$btn-default-bd-color: $bg-color-second;
+$btn-default-font-family: $font-family-pt-sans;
+$btn-default-font-color: $font-color-primary;
+$btn-default-font-weight: normal;
+
+$btn-primary-bg-color: $bg-color-third;
+$btn-primary-bg-color-hover: lighten($btn-primary-bg-color, 10%);
+$btn-primary-bd-color: $bg-color-third;
+$btn-primary-font-color: $font-color-primary;
+
+$btn-second-bg-color: $bg-color-four;
+$btn-second-bg-color-hover: lighten($btn-second-bg-color, 10%);
+$btn-second-bd-color: $bg-color-four;
+$btn-second-font-color: $font-color-primary;
+
+$btn-disabled-bg-color: #C3C3C3;
+
+$link-hover-decoration: underline;*/
+
+//- Colors
+$btn-default-font-size: $font-size-fifth; // 13
+$btn-default-font-line-height: ($btn-default-font-size + 2);
+$btn-default-bd-radius: 3px;
+
+$btn-sm-font-size: $font-size-sixth; // 12
+$btn-sm-font-line-height: ($btn-sm-font-size + 2);
+$btn-sm-bd-radius: 3px;
+
+$btn-md-font-size: $font-size-second; // 18
+$btn-md-font-line-height: ($btn-md-font-size + 2);
+$btn-md-bd-radius: 3px;
+
+$btn-lg-font-size: $font-size-primary; // 20
+$btn-lg-font-line-height: ($btn-lg-font-size + 2);
+$btn-lg-bd-radius: 3px;
+
+/**
+ * Inputs Text
+ */
+$input-text-font-family: $font-family-muli;
+$input-text-font-size: $font-size-third;
+$input-text-color: #6A6768;
+$input-text-bg: #FBF5F6;
+$input-text-border: #CECECE;
+$input-text-border-error: #D88676;
+
+$text-font-size-error: $font-size-sixth;
+$text-color-error: #FF0000;
+
+/**
+ * Boxs
+ */
+/*$box-default-bg-color: $bg-color-six;*/
+/*$box-default-border-color: #DCDCDC;
+$box-default-border: 1px solid $box-default-border-color;
+
+$box-primary-bg-color: $bg-color-second;
+$box-primary-border-color: #DCDCDC;
+$box-primary-border: 1px solid $box-default-border-color;*/

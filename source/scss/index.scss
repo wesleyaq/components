@@ -1,0 +1,21 @@
+@import "inc/variables";
+@import "inc/mixins";
+@import "inc/sprite";
+@include sprites($spritesheet-sprites);
+
+/*
+ * Components
+ */
+@import "components/buttons";
+@import "components/helpers";
+@import "components/texts";
+@import "components/colors";
+
+body {
+	font-family: Arial;
+}
+
+/*input {
+	border: solid 233px;
+	opacity: 1;
+}*/

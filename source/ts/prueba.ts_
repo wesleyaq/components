@@ -1,0 +1,52 @@
+function holaMundo(nombre){
+	return "Hola Mundo!! Soy" + nombre;
+}
+
+var nombre = " Luis Peñaloza";
+var resultado = holaMundo(nombre);
+
+var etiqueta = <HTMLElement>document.getElementById('container');
+etiqueta.innerHTML = resultado;
+
+
+var nombre:string = "Luis Peñaloza Guette";
+var edad:number = 55;
+var programador:boolean = true;
+var langs: Array<string> = ["PHP", "Javascripts", "CSS"];
+
+etiqueta.innerHTML = nombre + " - " + edad;
+
+var a = 7;
+var b = 12;
+
+if(a === 7) {
+	let a = 4;
+	var b = 1;
+
+	console.log("Dentro del if:" + a + " - " + b);
+
+}
+
+console.log("Fuera del if:" + a + " - " + b);
+
+
+//Funciones y tipado
+function devuelveNumero(num:number):string {
+	return "Número devuelto: " + num;
+} 
+
+alert(devuelveNumero(34));
+alert(devuelveString('hola'));
+
+//Funciones y tipado
+function devuelveString(texto:string):number {
+	if(texto == 'hola') {
+		var num = 66;
+	} else {
+		var num = 90;
+	}
+	return num;
+} 
+
+
+

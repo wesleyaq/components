@@ -1,0 +1,11 @@
+.DS_Store
+.svn
+runner/node_modules
+runner/bower_components
+runner/.sass-cache
+runner/*.log
+TEMP.txt
+dev/
+prod/
+
+# added: don't version compilated files

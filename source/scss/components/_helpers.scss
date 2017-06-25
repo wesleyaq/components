@@ -1,0 +1,123 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
+ * Aligns
+ */
+.align {
+  &-center { text-align: center; }
+  &-left   { text-align: left;   }
+  &-right  { text-align: right;  }
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.left  { float: left;  }
+.right { float: right; }
+
+/*
+ * Clearfix
+ */
+.clear,
+.container,
+.panel,
+.row,
+.row-padding,
+.cell-row,
+.bar {
+  &:after,
+  &:before {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/*
+ * Show and hide
+ */
+.-show {
+  display: block;
+  &-hover:hover {
+    display: block;
+  }
+  &-ib {
+    display: inline-block;
+  }
+}
+.-hide {
+  display: none;
+}
+
+/*
+ * Margins, Paddings
+ */
+.-mg {
+  margin: 15px;
+  &-sm { margin: 5px;  }
+  &-lg { margin: 25px; }
+}
+
+.-pd {
+  padding: 10px 15px;
+  &-sm { padding: 5px 10px;  }
+  &-md { padding: 20px 20px; }
+  &-lg { padding: 30px 30px; }
+}
+
+/*
+* Margins and paddings
+*/
+$i: 0;
+@while $i <= 100 {
+	.-mt#{$i} {
+		margin-top: #{$i}px;
+	}
+	.-mb#{$i} {
+		margin-bottom: #{$i}px;
+	}
+	.-ml#{$i} {
+		margin-left: #{$i}px;
+	}
+	.-mr#{$i} {
+		margin-right: #{$i}px;
+	}
+	.-pt#{$i} {
+		padding-top: #{$i}px;
+	}
+	.-pl#{$i} {
+		padding-left: #{$i}px;
+	}
+	.-pr#{$i} {
+		padding-right: #{$i}px;
+	}
+	.-pb#{$i} {
+		padding-bottom: #{$i}px;
+	}
+
+	/*@media screen and (max-width: $breakpoint-lg-max) {
+		.-mtm#{$i} {
+			margin-top: #{$i}px !important;
+		}
+		.-mlm#{$i} {
+			margin-left: #{$i}px !important;
+		}
+		.-ptm#{$i} {
+			padding-top: #{$i}px !important;
+		}
+		.-plm#{$i} {
+			padding-left: #{$i}px !important;
+		}
+		.-pbm#{$i} {
+			padding-bottom: #{$i}px !important;
+		}
+	}*/
+	$i: $i + 5;
+}
