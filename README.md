@@ -1,21 +1,21 @@
 I2B FrontEnd
-===
 
-Guia para el desarrollo de los componentes FrontEnd
+Guía para el desarrollo de los componentes FrontEnd
+
 
 ## Guia de estandar css con con Sass - scss
 
-Los nombre de las class deben se lo mas corto posible para esto usaremos abreviaturas Ej:
+Los nombres de las class deben ser lo más corto posible, para esto usaremos abreviaturas Ej:
 
 ```
 <button class=”btn”></button>
 
 .btn {
-	atributos...
+    Atributos...
 }
 ```
 
-En el caso de agregarle un atributo variable como el color rojo al componente botón se hara de la siguiente forma:
+En el caso de agregarle un atributo variable como el color rojo al componente botón se hará de la siguiente forma:
 
 - -black = Negro
 - -white = Blanco
@@ -28,14 +28,15 @@ En el caso de agregarle un atributo variable como el color rojo al componente bo
 <button class=”btn -red”></button>
 
 .btn {
-	atributos...
-	&.-red {
-		color: red;
-	}
+    Atributos...
+    &.-red {
+        color: red;
+    }
 }
 ```
 
-Para cambiarle el tamaño al botón usaremos las siguiente abreviaturas:
+
+Para cambiarle el tamaño al botón usaremos las siguientes abreviaturas:
 
 - -sm  = Pequeño
 - -md  = Medio
@@ -46,14 +47,14 @@ Para cambiarle el tamaño al botón usaremos las siguiente abreviaturas:
 <button class=”btn -red -md”></button>
 
 .btn {
-	atributos...
-	&.-red {
-		color: red;
-	}
-	&.-md {
-		padding: 10px 15px;
-		font-size: 16px;
-	}
+    Atributos...
+    &.-red {
+        color: red;
+    }
+    &.-md {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
 }
 ```
 
@@ -67,9 +68,9 @@ En el caso de un hijo, no usar más de 3 niveles:
 </div>
 
 .bar {
-	atributos...
-	.item {
-		atributos...
-	}
+    Atributos...
+    .item {
+        Atributos...
+    }
 }
 ```
